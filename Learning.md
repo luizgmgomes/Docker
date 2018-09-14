@@ -3,11 +3,12 @@
 
 
 ###### Info
-Registry:                                       <- From/To where you can download/upload images
-store.docker.com
+Registry (store.docker.com)                            <- From/To where you can download/upload images
+Dockerfile                                             <- Create a docker with configuration extistent inside this file
 
 
-###### **Nommenclature**:
+
+###### Nommenclature:
 pull = fetches images from Docker Registry
 
 ###### Terminology
@@ -27,10 +28,14 @@ In the last section, you saw a lot of Docker-specific jargon which might be conf
 #docker image pull alpine
 #docker image ls
 #docker container run alpine ls -l
-#docker container run -it alpine /bin/sh       <- "-it" = interactive + TTY - opens a terminal to type
+#docker container run -it alpine /bin/sh              <- "-it" = interactive + TTY - opens a terminal to type
 #docker container ls
-#docker container ls -a                        <- Shows all containers, including terminated ones
-#docker container run --help                   <- To find out more about commands
-#docker container start <container ID>         <- Starts a terminated container (# docker container ls -a) from it's ID
-#docker container exec <container ID> ls       <- Execute certain command on a container with specific ID
-#docker image inspect <IMAGE NAME>             <- Getting all info from certain image
+#docker container ls -a                               <- Shows all containers, including terminated ones
+#docker container run --help                          <- To find out more about commands
+#docker container start <container ID> <NAME>         <- Starts a terminated container (# docker container ls -a) from it's ID
+#docker container exec <container ID> ls              <- Execute certain command on a container with specific ID
+#docker image inspect <IMAGE NAME>                    <- Getting all info from certain image
+#docker container commit <container ID>               <- Create an image of one container, which can be a terminated container as well
+#docker image tag <IMAGE_ID> <NAME>                   <- Create a tag (name) to our image.
+#docker image build -t <TAG> .                        <- Create an image from a Dockerfile ".".
+#
