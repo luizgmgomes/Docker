@@ -26,7 +26,9 @@ In the last section, you saw a lot of Docker-specific jargon which might be conf
 ###### Commands:
 
 #docker image pull alpine
+
 #docker image ls
+
 #docker container run alpine ls -l
 #docker container run -it alpine /bin/sh              <- "-it" = interactive + TTY - opens a terminal to type
 #docker container ls
