@@ -7,7 +7,7 @@ Registry:                                       <- From/To where you can downloa
 store.docker.com
 
 
-###### Nommenclature:
+###### **Nommenclature**:
 pull = fetches images from Docker Registry
 
 ###### Terminology
