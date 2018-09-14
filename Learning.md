@@ -38,4 +38,3 @@ In the last section, you saw a lot of Docker-specific jargon which might be conf
 #docker container commit <container ID>               <- Create an image of one container, which can be a terminated container as well
 #docker image tag <IMAGE_ID> <NAME>                   <- Create a tag (name) to our image.
 #docker image build -t <TAG> .                        <- Create an image from a Dockerfile ".".
-#
