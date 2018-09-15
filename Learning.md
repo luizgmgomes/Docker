@@ -10,7 +10,7 @@ Swarm Mode                                             <- Tells Docker that you 
 Swarm:        
       - Stacks: Group of interrelated services and dependencies. Orchestrated as a unit. Production applications are one stack, and sometime more.            
       - Tasks: Atomic unit of a service and scheduling Docker. One container instance per task.            
-      - A stack component, including a container image, number of replicas (tasks), ports and update policy.          
+      - Service: A stack component, including a container image, number of replicas (tasks), ports and update policy.          
 
 
 
