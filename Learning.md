@@ -6,7 +6,11 @@
 Registry (store.docker.com)                            <- From/To where you can download/upload images
 Dockerfile                                             <- Create a docker with configuration extistent inside this file
 Compose                                                <- Is used to control multiple containers on a single system. Much like the Dockerfile we looked at to build an image, there is a text file that describes the application: which images to use, how many instances, the network connections, etc. But Compose only runs on a single system so while it is useful, we are going to skip Compose1 and go straight to Docker Swarm Mode.      
-Swarm Mode                                             <- Tells Docker that you will be running many Docker engines and you want to coordinate operations across all of them. Swarm mode combines the ability to not only define the application architecture, like Compose, but to define and maintain high availability levels, scaling, load balancing, and more. With all this functionality, Swarm mode is used more often in production environments than it’s more simplistic cousin, Compose.        
+Swarm Mode                                             <- Tells Docker that you will be running many Docker engines and you want to coordinate operations across all of them. Swarm mode combines the ability to not only define the application architecture, like Compose, but to define and maintain high availability levels, scaling, load balancing, and more. With all this functionality, Swarm mode is used more often in production environments than it’s more simplistic cousin, Compose.    
+Swarm:        
+      - Stacks: Group of interrelated services and dependencies. Orchestrated as a unit. Production applications are one stack, and sometime more.            
+      - Tasks: Atomic unit of a service and scheduling Docker. One container instance per task.            
+      - A stack component, including a container image, number of replicas (tasks), ports and update policy.          
 
 
 
@@ -44,4 +48,7 @@ In the last section, you saw a lot of Docker-specific jargon which might be conf
 #docker image tag <IMAGE_ID> <NAME>                   <- Create a tag (name) to our image.         
 #docker image build -t <TAG> .                        <- Create an image from a Dockerfile ".".       
 #docker image inspect --format "{{ json .RootFS.Layers }}" alpine        <- get certain information from image downloaded         
-
+#docker swarm init --advertise-addr $(hostname -i) --advertise-addr 127.0.0.1             <- Create a docker swarm "master"      
+#docker swarm join-token manager                      <- This command shows instructions to add a node to this docker swarm "master"     
+#docker node ls                                       <- Run this command on docker swarm leader to check all nodes connected     
+#
