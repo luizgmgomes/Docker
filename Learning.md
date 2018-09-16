@@ -16,6 +16,9 @@ Swarm:
 
 ###### Nommenclature:
 pull = fetches images from Docker Registry
+run = Run a command on a new container
+image = Docker images (like AMI)
+
 
 ###### Terminology
 In the last section, you saw a lot of Docker-specific jargon which might be confusing to some. So before you go further, let’s clarify some terminology that is used frequently in the Docker ecosystem.
