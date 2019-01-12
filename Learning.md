@@ -37,6 +37,7 @@ In the last section, you saw a lot of Docker-specific jargon which might be conf
 
 ###### Commands:
 
+#docker run = docker create + docker start
 #docker image pull alpine   
 #docker image ls      
 #docker container run alpine ls -l 
