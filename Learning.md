@@ -6,8 +6,8 @@
 **Registry (store.docker.com)**                            <- From/To where you can download/upload images.
 
 **Dockerfile**                                            <- Create a docker with configuration extistent inside this file.
-                                                          Flow: - Specify a base image
-                                                                - Run some commands to install additional programs
+                                                          Flow: - Specify a base image.
+                                                                - Run some commands to install additional programs.
                                                                 - Specify a command to run container startup
 
 **Compose**                                               <- Is used to control multiple containers on a single system. Much like the 
