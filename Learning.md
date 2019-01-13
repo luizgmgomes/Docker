@@ -62,6 +62,6 @@ In the last section, you saw a lot of Docker-specific jargon which might be conf
       STDIN - Anything that you type in your console that will be sent as a command or parameter to the container
       STDOUT - Anything that you see coming out as a result of a command that is not an error
       STDERR - Any error that outputs out of a running process on the screen
-
+#CTRL + D                                             <- Logs out of the container you are connected to
 
 
