@@ -3,10 +3,11 @@
 
 
 ###### Info
-**Registry (store.docker.com)**                            <- From/To where you can download/upload images.
+* Registry (store.docker.com)                             <- From/To where you can download/upload images.
 
 * Dockerfile                                              <- Create a docker with configuration extistent inside this file.
-  * Flow: * Specify a base image.
+  * Flow:
+    * Specify a base image.
     * Run some commands to install additional programs.
     * Specify a command to run container startup
 
