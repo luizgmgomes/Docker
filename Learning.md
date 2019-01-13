@@ -1,8 +1,8 @@
-# Docker
+#### Docker
 
 
 
-###### Info
+## Info
 * Registry (store.docker.com)
  * From/To where you can download/upload images.
 
@@ -25,13 +25,13 @@ Dockerfile we looked at to build an image, there is a text file that describes t
 
 
 
-###### Nommenclature:
+## Nommenclature:
 pull = fetches images from Docker Registry
 run = Run a command on a new container
 image = Docker images (like AMI)
 
 
-###### Terminology
+## Terminology
 In the last section, you saw a lot of Docker-specific jargon which might be confusing to some. So before you go further, let’s clarify some terminology that is used frequently in the Docker ecosystem.
 
 **Images** - The file system and configuration of our application which are used to create containers. To find out more about a Docker image, run docker image inspect alpine. In the demo above, you used the docker image pull command to download the alpine image. When you executed the command docker container run hello-world, it also did a docker image pull behind the scenes to download the hello-world image.                                     
@@ -46,7 +46,7 @@ In the last section, you saw a lot of Docker-specific jargon which might be conf
 
 
 
-###### Commands:
+## Commands:
 
 #docker run = docker create + docker start
 #docker image pull alpine   
