@@ -63,5 +63,5 @@ In the last section, you saw a lot of Docker-specific jargon which might be conf
       STDOUT - Anything that you see coming out as a result of a command that is not an error
       STDERR - Any error that outputs out of a running process on the screen
 #CTRL + D                                             <- Logs out of the container you are connected to
-
+#docker exec -it <container ID> bash                  <- Is a good way to connect to a container and run bash shell to type any command after that 
 
