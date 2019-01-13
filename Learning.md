@@ -3,11 +3,11 @@
 
 
 ###### Info
-**Registry (store.docker.com)**                            <- From/To where you can download/upload images
-**Dockerfile**                                            <- Create a docker with configuration extistent inside this file
+**Registry (store.docker.com)**                            <- From/To where you can download/upload images.
+**Dockerfile**                                            <- Create a docker with configuration extistent inside this file.
 **Compose**                                               <- Is used to control multiple containers on a single system. Much like the 
-Dockerfile we looked at to build an image, there is a text file that describes the application: which images to use, how many instances, the network connections, etc. But Compose only runs on a single system so while it is useful, we are going to skip Compose1 and go straight to Docker Swarm Mode.      
-**Swarm Mode**                                             <- Tells Docker that you will be running many Docker engines and you want to coordinate operations across all of them. Swarm mode combines the ability to not only define the application architecture, like Compose, but to define and maintain high availability levels, scaling, load balancing, and more. With all this functionality, Swarm mode is used more often in production environments than it’s more simplistic cousin, Compose.    
+Dockerfile we looked at to build an image, there is a text file that describes the application: which images to use, how many instances, the network connections, etc. But Compose only runs on a single system so while it is useful, we are going to skip Compose1 and go straight to Docker Swarm Mode.
+**Swarm Mode**                                             <- Tells Docker that you will be running many Docker engines and you want to coordinate operations across all of them. Swarm mode combines the ability to not only define the application architecture, like Compose, but to define and maintain high availability levels, scaling, load balancing, and more. With all this functionality, Swarm mode is used more often in production environments than it’s more simplistic cousin, Compose.
 Swarm:        
       - Stacks: Group of interrelated services and dependencies. Orchestrated as a unit. Production applications are one stack, and sometime more.            
       - Tasks: Atomic unit of a service and scheduling Docker. One container instance per task.            
