@@ -66,10 +66,10 @@ In the last section, you saw a lot of Docker-specific jargon which might be conf
 #docker stop                                          <- You send a SIGTERM to the container process to stop it. The container still have time to save things inside of it before shutting down - This command only gives docker 10 seconds (default time, can be changed using "-t") to stop things, if not, it will then run the command "docker kill" automatically, which will destroy instantly the container.
 #docker kill                                          <- Issues a SIGKILL command and will strraight forward kill the container process once and for all.
 #docker exec -it <container ID> <command>             <- This command allows you to run a seccond command inside the container. "-it" (interactive + tty (allocate a pseudo-TTY)
-      STDIN - Anything that you type in your console that will be sent as a command or parameter to the container
-      STDOUT - Anything that you see coming out as a result of a command that is not an error
-      STDERR - Any error that outputs out of a running process on the screen
-#CTRL + D                                             <- Logs out of the container you are connected to
-#docker exec -it <container ID> bash                  <- Is a good way to connect to a container and run bash shell to type any command after that 
+      STDIN - Anything that you type in your console that will be sent as a command or parameter to the container.
+      STDOUT - Anything that you see coming out as a result of a command that is not an error.
+      STDERR - Any error that outputs out of a running process on the screen.
+#CTRL + D                                             <- Logs out of the container you are connected to.
+#docker exec -it <container ID> bash                  <- Is a good way to connect to a container and run bash shell to type any command after that.
 #docker run -it busybox sh                            <- Is a quick and good way to spin up a container and just run any command as test or anything similar.
 #docker build .                                       <- This command will build a container with all sets of commands inside a "Dockerfile" on the current directory
