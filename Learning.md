@@ -18,7 +18,7 @@ Dockerfile we looked at to build an image, there is a text file that describes t
 
 * Swarm Mode
    * Tells Docker that you will be running many Docker engines and you want to coordinate operations across all of them. Swarm mode combines the ability to not only define the application architecture, like Compose, but to define and maintain high availability levels, scaling, load balancing, and more. With all this functionality, Swarm mode is used more often in production environments than it’s more simplistic cousin, Compose.
-**Swarm:**
+* Swarm:
    * Stacks: Group of interrelated services and dependencies. Orchestrated as a unit. Production applications are one stack, and sometime more.            
    * Tasks: Atomic unit of a service and scheduling Docker. One container instance per task.            
    * Service: A stack component, including a container image, number of replicas (tasks), ports and update policy.          
