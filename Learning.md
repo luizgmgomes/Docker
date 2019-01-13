@@ -4,7 +4,7 @@
 
 ## Info
 * Registry (store.docker.com)
- * From/To where you can download/upload images.
+   * From/To where you can download/upload images.
 
 * Dockerfile
  * Create a docker with configuration extistent inside this file. Flow:
