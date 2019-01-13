@@ -59,4 +59,9 @@ In the last section, you saw a lot of Docker-specific jargon which might be conf
 #docker stop                                          <- You send a SIGTERM to the container process to stop it. The container still have time to save things inside of it before shutting down - This command only gives docker 10 seconds (default time, can be changed using "-t") to stop things, if not, it will then run the command "docker kill" automatically, which will destroy instantly the container.
 #docker kill                                          <- Issues a SIGKILL command and will strraight forward kill the container process once and for all.
 #docker exec -it <container ID> <command>             <- This command allows you to run a seccond command inside the container. "-it" (interactive + tty (allocate a pseudo-TTY)
+      STDIN - Anything that you type in your console that will be sent as a command or parameter to the container
+      STDOUT - Anything that you see coming out as a result of a command that is not an error
+      STDERR - Any error that outputs out of a running process on the screen
+
+
 
