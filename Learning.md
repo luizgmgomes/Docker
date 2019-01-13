@@ -55,4 +55,4 @@ In the last section, you saw a lot of Docker-specific jargon which might be conf
 #docker swarm init --advertise-addr $(hostname -i) --advertise-addr 127.0.0.1             <- Create a docker swarm "master"      
 #docker swarm join-token manager                      <- This command shows instructions to add a node to this docker swarm "master"     
 #docker node ls                                       <- Run this command on docker swarm leader to check all nodes connected     
-#
+#docker system prune                                  <- Remove all stopped containers, dangling images, build cache and networks not used by at least one container.
