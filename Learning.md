@@ -28,7 +28,7 @@ In the last section, you saw a lot of Docker-specific jargon which might be conf
 **Docker daemon** - The background service running on the host that manages building, running and distributing Docker containers.         
 **Docker client** - The command line tool that allows the user to interact with the Docker daemon.               
 **Docker Store** - Store is, among other things, a registry of Docker images. You can think of the registry as a directory of all available Docker images. You’ll be using this later in this tutorial.          
-****Layers** - A Docker image is built up from a series of layers. Each layer represents an instruction in the image’s Dockerfile. Each layer except the last one is read-only.               
+**Layers** - A Docker image is built up from a series of layers. Each layer represents an instruction in the image’s Dockerfile. Each layer except the last one is read-only.               
 **Dockerfile** - A text file that contains all the commands, in order, needed to build a given image. The Dockerfile reference page lists the various commands and format details for Dockerfiles.            
 **Volumes** - A special Docker container layer that allows data to persist and be shared separately from the container itself. Think of volumes as a way to abstract and manage your persistent data separately from the application itself.
 
