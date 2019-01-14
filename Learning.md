@@ -82,4 +82,4 @@ In the last section, you saw a lot of Docker-specific jargon which might be conf
 #CTRL + D                                             <- Logs out of the container you are connected to.
 #docker exec -it <container ID> bash                  <- Is a good way to connect to a container and run bash shell to type any command after that.
 #docker run -it busybox sh                            <- Is a quick and good way to spin up a container and just run any command as test or anything similar.
-# docker build .                                       <- This command will build a container with all sets of commands inside a "Dockerfile" on the current directory
+#docker build .                                       <- This command will build a container with all sets of commands inside a "Dockerfile" on the current directory
