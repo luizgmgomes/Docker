@@ -41,12 +41,13 @@ In the last section, you saw a lot of Docker-specific jargon which might be conf
 **Docker Store** - Store is, among other things, a registry of Docker images. You can think of the registry as a directory of all available Docker images. You’ll be using this later in this tutorial.          
 **Layers** - A Docker image is built up from a series of layers. Each layer represents an instruction in the image’s Dockerfile. Each layer except the last one is read-only.               
 **Dockerfile** - A text file that contains all the commands, in order, needed to build a given image. The Dockerfile reference page lists the various commands and format details for Dockerfiles.
-    ** Steps:
-        ** We essentially take the image generated on the previous process (e.g.: FROM alpine:3.7).
-        ** Create a new container out of it.
-        ** Execute a command in the container or make change to its system (e.g.: RUN apk add --no-cache mysql-client).
+    * Steps:
+        * We essentially take the image generated on the previous process (e.g.: FROM alpine:3.7).
+        * Create a new container out of it.
+        * Execute a command in the container or make change to its system (e.g.: RUN apk add --no-cache mysql-client).
         * After running this command, docker takes a snapshot of its file system and save as an output (an image) for the next instruction along the chain.
-        ** If there is no more instruction to execute the image that was generated during the last step is output from the entire process as the final image that we really care about (e.g.: CMD ["redis-server"]).
+        * If there is no more instruction to execute the image that was generated during the last step is output from the entire process as the final image that we really care about (e.g.: CMD ["redis-server"]).
+
 **Volumes** - A special Docker container layer that allows data to persist and be shared separately from the container itself. Think of volumes as a way to abstract and manage your persistent data separately from the application itself.
 
 
