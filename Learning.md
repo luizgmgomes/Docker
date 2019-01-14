@@ -19,9 +19,9 @@ Dockerfile we looked at to build an image, there is a text file that describes t
 * Swarm Mode
    * Tells Docker that you will be running many Docker engines and you want to coordinate operations across all of them. Swarm mode combines the ability to not only define the application architecture, like Compose, but to define and maintain high availability levels, scaling, load balancing, and more. With all this functionality, Swarm mode is used more often in production environments than it’s more simplistic cousin, Compose.
 * Swarm:
-   * Stacks: Group of interrelated services and dependencies. Orchestrated as a unit. Production applications are one stack, and sometime more.            
-   * Tasks: Atomic unit of a service and scheduling Docker. One container instance per task.            
-   * Service: A stack component, including a container image, number of replicas (tasks), ports and update policy.          
+    * Stacks: Group of interrelated services and dependencies. Orchestrated as a unit. Production applications are one stack, and sometime more.            
+    * Tasks: Atomic unit of a service and scheduling Docker. One container instance per task.            
+    * Service: A stack component, including a container image, number of replicas (tasks), ports and update policy.          
 
 
 
@@ -42,11 +42,11 @@ In the last section, you saw a lot of Docker-specific jargon which might be conf
 **Layers** - A Docker image is built up from a series of layers. Each layer represents an instruction in the image’s Dockerfile. Each layer except the last one is read-only.               
 **Dockerfile** - A text file that contains all the commands, in order, needed to build a given image. The Dockerfile reference page lists the various commands and format details for Dockerfiles.
     * Steps:
-        * We essentially take the image generated on the previous process (e.g.: FROM alpine:3.7)
-        * Create a new container out of it 
-        * Execute a command in the container or make change to its system (e.g.: RUN apk add --no-cache mysql-client)
-        * After running this command, docker takes a snapshot of its file system and save as an output (an image) for the next instruction along the chain
-        * If there is no more instruction to execute the image that was generated during the last step is output from the entire process as the final image that we really care about (e.g.: CMD ["redis-server"]) 
+        * We essentially take the image generated on the previous process (e.g.: FROM alpine:3.7).
+        * Create a new container out of it.
+        * Execute a command in the container or make change to its system (e.g.: RUN apk add --no-cache mysql-client).
+        * After running this command, docker takes a snapshot of its file system and save as an output (an image) for the next instruction along the chain.
+        * If there is no more instruction to execute the image that was generated during the last step is output from the entire process as the final image that we really care about (e.g.: CMD ["redis-server"]).
 **Volumes** - A special Docker container layer that allows data to persist and be shared separately from the container itself. Think of volumes as a way to abstract and manage your persistent data separately from the application itself.
 
 
