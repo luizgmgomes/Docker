@@ -63,7 +63,7 @@ In the last section, you saw a lot of Docker-specific jargon which might be conf
 * docker container ls          
 * docker container ls -a                               <- Shows all containers, including terminated ones          
 * docker container run --help                          <- To find out more about commands           
-* docker container start <container ID> <NAME>         <- Starts a terminated container (# docker container ls -a) from it's ID           
+* docker container start <container ID> <NAME>         <- Starts a terminated container (# docker container ls -a) from its ID           
 * docker container exec <container ID> ls              <- Execute certain command on a container with specific ID       
 * docker image inspect <IMAGE NAME>                    <- Getting all info from certain image          
 * docker container commit <container ID>               <- Create an image of one container, which can be a terminated container as well   
