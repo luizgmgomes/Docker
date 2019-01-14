@@ -55,32 +55,32 @@ In the last section, you saw a lot of Docker-specific jargon which might be conf
 
 ## Commands:
 
-#docker run = docker create + docker start
-#docker image pull alpine   
-#docker image ls      
-#docker container run alpine ls -l 
-#docker container run -it alpine /bin/sh              <- "-it" = interactive + TTY - opens a terminal to type          
-#docker container ls          
-#docker container ls -a                               <- Shows all containers, including terminated ones          
-#docker container run --help                          <- To find out more about commands           
-#docker container start <container ID> <NAME>         <- Starts a terminated container (# docker container ls -a) from it's ID           
-#docker container exec <container ID> ls              <- Execute certain command on a container with specific ID       
-#docker image inspect <IMAGE NAME>                    <- Getting all info from certain image          
-#docker container commit <container ID>               <- Create an image of one container, which can be a terminated container as well   
-#docker image tag <IMAGE_ID> <NAME>                   <- Create a tag (name) to our image.         
-#docker image build -t <TAG> .                        <- Create an image from a Dockerfile ".".       
-#docker image inspect --format "{{ json .RootFS.Layers }}" alpine        <- get certain information from image downloaded         
-#docker swarm init --advertise-addr $(hostname -i) --advertise-addr 127.0.0.1             <- Create a docker swarm "master"      
-#docker swarm join-token manager                      <- This command shows instructions to add a node to this docker swarm "master"     
-#docker node ls                                       <- Run this command on docker swarm leader to check all nodes connected     
-#docker system prune                                  <- Remove all stopped containers, dangling images, build cache and networks not used by at least one container.
-#docker stop                                          <- You send a SIGTERM to the container process to stop it. The container still have time to save things inside of it before shutting down - This command only gives docker 10 seconds (default time, can be changed using "-t") to stop things, if not, it will then run the command "docker kill" automatically, which will destroy instantly the container.
-#docker kill                                          <- Issues a SIGKILL command and will strraight forward kill the container process once and for all.
-#docker exec -it <container ID> <command>             <- This command allows you to run a seccond command inside the container. "-it" (interactive + tty (allocate a pseudo-TTY)
+* docker run = docker create + docker start
+* docker image pull alpine   
+* docker image ls      
+* docker container run alpine ls -l 
+* docker container run -it alpine /bin/sh              <- "-it" = interactive + TTY - opens a terminal to type          
+* docker container ls          
+* docker container ls -a                               <- Shows all containers, including terminated ones          
+* docker container run --help                          <- To find out more about commands           
+* docker container start <container ID> <NAME>         <- Starts a terminated container (# docker container ls -a) from it's ID           
+* docker container exec <container ID> ls              <- Execute certain command on a container with specific ID       
+* docker image inspect <IMAGE NAME>                    <- Getting all info from certain image          
+* docker container commit <container ID>               <- Create an image of one container, which can be a terminated container as well   
+* docker image tag <IMAGE_ID> <NAME>                   <- Create a tag (name) to our image.         
+* docker image build -t <TAG> .                        <- Create an image from a Dockerfile ".".       
+* docker image inspect --format "{{ json .RootFS.Layers }}" alpine        <- get certain information from image downloaded         
+* docker swarm init --advertise-addr $(hostname -i) --advertise-addr 127.0.0.1             <- Create a docker swarm "master"      
+* docker swarm join-token manager                      <- This command shows instructions to add a node to this docker swarm "master"     
+* docker node ls                                       <- Run this command on docker swarm leader to check all nodes connected     
+* docker system prune                                  <- Remove all stopped containers, dangling images, build cache and networks not used by at least one container.
+* docker stop                                          <- You send a SIGTERM to the container process to stop it. The container still have time to save things inside of it before shutting down - This command only gives docker 10 seconds (default time, can be changed using "-t") to stop things, if not, it will then run the command "docker kill" automatically, which will destroy instantly the container.
+* docker kill                                          <- Issues a SIGKILL command and will strraight forward kill the container process once and for all.
+* docker exec -it <container ID> <command>             <- This command allows you to run a seccond command inside the container. "-it" (interactive + tty (allocate a pseudo-TTY)
       STDIN - Anything that you type in your console that will be sent as a command or parameter to the container.
       STDOUT - Anything that you see coming out as a result of a command that is not an error.
       STDERR - Any error that outputs out of a running process on the screen.
-#CTRL + D                                             <- Logs out of the container you are connected to.
-#docker exec -it <container ID> bash                  <- Is a good way to connect to a container and run bash shell to type any command after that.
-#docker run -it busybox sh                            <- Is a quick and good way to spin up a container and just run any command as test or anything similar.
-#docker build .                                       <- This command will build a container with all sets of commands inside a "Dockerfile" on the current directory
+* CTRL + D                                             <- Logs out of the container you are connected to.
+* docker exec -it <container ID> bash                  <- Is a good way to connect to a container and run bash shell to type any command after that.
+* docker run -it busybox sh                            <- Is a quick and good way to spin up a container and just run any command as test or anything similar.
+* docker build .                                       <- This command will build a container with all sets of commands inside a "Dockerfile" on the current directory
