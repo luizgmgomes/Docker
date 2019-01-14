@@ -26,9 +26,10 @@ Dockerfile we looked at to build an image, there is a text file that describes t
 
 
 ## Nommenclature:
-pull = fetches images from Docker Registry
-run = Run a command on a new container
-image = Docker images (like AMI)
+* pull = fetches images from Docker Registry
+* run = Run a command on a new container
+* image = Docker images (like AMI)
+* alpine = Basically means a small version of something (e.g.: FROM node:alpine - It is a small version of node image)
 
 
 ## Terminology
