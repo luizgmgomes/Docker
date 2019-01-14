@@ -47,7 +47,6 @@ In the last section, you saw a lot of Docker-specific jargon which might be conf
     * Execute a command in the container or make change to its system (e.g.: RUN apk add --no-cache mysql-client).
     * After running this command, docker takes a snapshot of its file system and save as an output (an image) for the next instruction along the chain.
     * If there is no more instruction to execute the image that was generated during the last step is output from the entire process as the final image that we really care about (e.g.: CMD ["redis-server"]).
-
 **Volumes** - A special Docker container layer that allows data to persist and be shared separately from the container itself. Think of volumes as a way to abstract and manage your persistent data separately from the application itself.
 
 
