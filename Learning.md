@@ -88,6 +88,6 @@ In the last section, you saw a lot of Docker-specific jargon which might be conf
 
 
 ## Dockerfile
-**FROM** alpine:1
-**RUN** npm install
-**CMD** ["npm", "start"]
+* **FROM** alpine:1
+* **RUN** npm install
+* **CMD** ["npm", "start"]
