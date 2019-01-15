@@ -14,6 +14,13 @@
 
 * Docker Compose
     * Docker compose is to essentially function as a Docker CLI but allow you to kind of issue multiple commands much more quickly.
+      * Essentially it works like this:
+        * Docker-compose.yml
+          * redis-server
+            * Make it using the "redis" image
+          * node-app
+            * Make it using the Dockerfile in the current directory
+            * Map port 8081 to 8081
 
 * Swarm Mode
    * Tells Docker that you will be running many Docker engines and you want to coordinate operations across all of them. Swarm mode combines the ability to not only define the application architecture, like Compose, but to define and maintain high availability levels, scaling, load balancing, and more. With all this functionality, Swarm mode is used more often in production environments than it’s more simplistic cousin, Compose.
