@@ -12,9 +12,8 @@
      * Run some commands to install additional programs.
       * Specify a command to run container startup
 
-* Compose
-    * Is used to control multiple containers on a single system. Much like the 
-Dockerfile we looked at to build an image, there is a text file that describes the application: which images to use, how many instances, the network connections, etc. But Compose only runs on a single system so while it is useful, we are going to skip Compose1 and go straight to Docker Swarm Mode.
+* Docker Compose
+    * Docker compose is to essentially function as a Docker CLI but allow you to kind of issue multiple commands much more quickly.
 
 * Swarm Mode
    * Tells Docker that you will be running many Docker engines and you want to coordinate operations across all of them. Swarm mode combines the ability to not only define the application architecture, like Compose, but to define and maintain high availability levels, scaling, load balancing, and more. With all this functionality, Swarm mode is used more often in production environments than it’s more simplistic cousin, Compose.
