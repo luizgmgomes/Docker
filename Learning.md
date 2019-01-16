@@ -107,6 +107,7 @@ In the last section, you saw a lot of Docker-specific jargon which might be conf
 * docker build -t <dockerID>/<project_name> .                                       <- This command will build a container with all sets of commands inside a "Dockerfile" on the current directory
 * docker run -p <external_port>:<port_inside_container> <image_id>
 * docker-compose up                                 <- Start docker-compose file containers
+* docker-compose up -d                              <- Start docker-compose file containers and run them on background (detach)
 * docker-compose down                               <- Stop docker-compose file containers
 
                                                                                 
