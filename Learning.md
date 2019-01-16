@@ -11,7 +11,12 @@
      * Specify a base image.
      * Run some commands to install additional programs.
       * Specify a command to run container startup
-
+        ```
+        FROM alpine:1
+        RUN npm install
+        CMD ["npm", "start"]
+        ```
+        
 * Docker Compose
     * Docker compose is to essentially function as a Docker CLI but allow you to kind of issue multiple commands much more quickly.
       * Essentially it works like this:
@@ -101,6 +106,8 @@ In the last section, you saw a lot of Docker-specific jargon which might be conf
 * docker run -it busybox sh                            <- Is a quick and good way to spin up a container and just run any command as test or anything similar.
 * docker build -t <dockerID>/<project_name> .                                       <- This command will build a container with all sets of commands inside a "Dockerfile" on the current directory
 * docker run -p <external_port>:<port_inside_container> <image_id>
+* docker-compose up                                 <- Start docker-compose file containers
+* docker-compose down                               <- Stop docker-compose file containers
 
                                                                                 
 
