@@ -108,6 +108,7 @@ In the last section, you saw a lot of Docker-specific jargon which might be conf
 * docker run -p <external_port>:<port_inside_container> <image_id>
 * docker-compose up                                 <- Start docker-compose file containers
 * docker-compose up -d                              <- Start docker-compose file containers and run them on background (detach)
+* docker-compose up --build                         <- Start docker-compose file containers and force to rebuild the image
 * docker-compose down                               <- Stop docker-compose file containers
 
                                                                                 
