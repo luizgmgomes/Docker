@@ -116,6 +116,7 @@ In the last section, you saw a lot of Docker-specific jargon which might be conf
 
 
 ## Dockerfile
+To add comments, do a normal "# Comments"
 * **FROM** alpine:1
 * **RUN** npm install
 * **CMD** ["npm", "start"]
