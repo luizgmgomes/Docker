@@ -111,6 +111,8 @@ In the last section, you saw a lot of Docker-specific jargon which might be conf
 * docker-compose up -d                              <- Start docker-compose file containers and run them on background (detach)
 * docker-compose up --build                         <- Start docker-compose file containers and force to rebuild the image
 * docker-compose down                               <- Stop docker-compose file containers
+* docker run -v $(pwd):/app 192688e06095            <- It will basically run the container mapping the "/app" folder inside the container to the current directory on the local machine
+* docker run -v /app/node_modules -v $(pwd):/app 192688e06095                       <- It will do the same as the command above, but the folder "/app/node_modules" will be picked up from inside the container, not from the local machine as the rest of the command shows.
 
                                                                                 
 
